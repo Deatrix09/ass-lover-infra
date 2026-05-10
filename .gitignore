@@ -1,0 +1,10 @@
+ssl/
+*.key
+*.crt
+*.pem
+.env*
+*.swp
+*.swo
+*.save
+=
+unpacking
