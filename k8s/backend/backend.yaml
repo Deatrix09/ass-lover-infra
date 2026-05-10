@@ -6,8 +6,6 @@ metadata:
 data:
   QDRANT_HOST: qdrant
   QDRANT_PORT: "6333"
-  FIRECRAWL_URL: http://firecrawl-api:3002
-  FIRECRAWL_KEY: fc-local-key
   OLLAMA_URL: http://ollama:11434
   DATA_DIR: /app/data
 ---
