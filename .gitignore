@@ -3,6 +3,7 @@ ssl/
 *.crt
 *.pem
 .env*
+!.env*.example
 *.swp
 *.swo
 *.save
