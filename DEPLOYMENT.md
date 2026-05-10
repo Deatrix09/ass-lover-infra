@@ -16,9 +16,9 @@ Create a project directory and clone all parts:
 ```bash
 mkdir project && cd project
 
-git clone https://github.com/Deatrix09/ass-lover-infra
-git clone https://github.com/Deatrix09/ass-lover-frontend
-git clone https://github.com/Deatrix09/ass-lover-backend
+git clone https://github.com/Deatrix09/ass-lover-infra rag-infra
+git clone https://github.com/Deatrix09/ass-lover-frontend rag-frontend
+git clone https://github.com/Deatrix09/ass-lover-backend rag-backend
 ```
 
 ### 2. Configure Environment
@@ -26,7 +26,7 @@ git clone https://github.com/Deatrix09/ass-lover-backend
 The system relies on environment variables. We use a central `.env` file in the infra directory.
 
 ```bash
-cd ass-lover-infra
+cd rag-infra
 cp .env.prod.example .env
 # Edit .env with your actual values (IP, API Keys, Passwords)
 nano .env
@@ -68,7 +68,7 @@ After starting:
 
 When code is updated in the repositories:
 ```bash
-cd ass-lover-infra
+cd rag-infra
 docker compose -f docker-compose.prod.yaml pull
 docker compose -f docker-compose.prod.yaml up -d --build
 ```
